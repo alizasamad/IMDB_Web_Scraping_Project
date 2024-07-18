@@ -153,6 +153,6 @@ writer.writerow(['Title', 'Year Released', 'Media Type', 'Movie Duration', 'Audi
 for title, year, rating, description, duration, meta, media, vote  in zip(titles, years, ratings, descriptions, durations, metacritic, mediaType, votes):
     writer.writerow([title, year, media, duration, rating, vote, meta, description])  # write each item as new row in file
     
-#CLOSE THE CSV FILE+
+#CLOSE THE CSV FILE
 file.close()
 print("CSV file successfully saved")
